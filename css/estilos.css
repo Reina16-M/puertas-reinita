@@ -1,0 +1,212 @@
+/* 🎨 Paleta:
+   - Marrón oscuro (#5a3825) → madera
+   - Verde musgo (#3d6b35) → naturaleza
+   - Beige claro (#f5f2e7) → fondo
+*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f2e7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3c320e !important; 
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+/* Inicio con fondo madera */
+#inicio {
+  background: url('../personalizados/img/fondo-madera.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+#inicio h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+#inicio p {
+  font-size: 1.2rem;
+  background: rgba(0,0,0,0.4);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Productos */
+#productos h2 {
+  color: #5a3825;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  color: #3d6b35;
+  font-weight: bold;
+}
+
+/* Nosotros */
+#nosotros {
+  background-color: #eae4da;
+  border-top: 3px solid #5a3825;
+  border-bottom: 3px solid #5a3825;
+}
+
+#nosotros h2 {
+  color: #3d6b35;
+  margin-bottom: 15px;
+}
+
+/* Contacto */
+#contacto h2 {
+  color: #5a3825;
+}
+
+#contacto a.btn {
+  background-color: #3d6b35;
+  border: none;
+}
+
+#contacto a.btn:hover {
+  background-color: #2f5229;
+}
+
+/* Footer */
+.footer {
+  background: #3c320e !important;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 14px;
+}
+
+.card-img-top {
+  height: 300px;          /* Fuerza la misma altura */
+  object-fit: cover;      /* Recorta la imagen sin deformarla */
+  border-bottom: 3px solid #5a3825; /* borde marrón elegante opcional */
+}
+
+
+
+.contacto {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f7f5f0; /* color suave tipo pergamino */
+}
+
+.contacto h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #4E342E; /* café madera */
+}
+
+.contacto p {
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card .icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-card h3 {
+  color: #6D4C41;
+  margin-bottom: 8px;
+}
+
+.contact-card a {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-whatsapp img {
+  width: 22px;
+  height: 22px;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe57;
+  transform: scale(1.05);
+}
+
+
+
+.contact-card-whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;             
+}
+
+
+
+
+.contact-card.mapa {
+  width: 250px;         /* mismo ancho que las otras tarjetas */
+  height: 200px;        /* mismo alto que quieres darle */
+  padding: 0;           /* sin relleno para que el mapa ocupe todo */
+  overflow: hidden;     /* recorta cualquier desborde */
+}
+
+.contact-card.mapa iframe {
+  width: 100%;          /* ocupa todo el ancho del card */
+  height: 100%;         /* ocupa todo el alto del card */
+  border: 0;
+  border-radius: 12px;  /* igual que las otras tarjetas */
+}
